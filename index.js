@@ -58,7 +58,13 @@ ninjaApp.controller('ninjaController', ["$scope", function($scope){
     $scope.newNinja.rate = "";
     }
 
-
+  $scope.ninjaMod = function() {
+    $scope.ninjas({
+      name: $scope.sameNinja.name,
+      belt: $scope.sameNinja.belt,
+      rate: $scope.sameNinja.rate
+    })
+  }
 
 //Where Controller Ends
 }]);
